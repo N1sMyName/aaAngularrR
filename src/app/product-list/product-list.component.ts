@@ -6,9 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-list.component.sass']
 })
 export class ProductListComponent {
+  // lists
   list=[1,2,3,4,5,6]
-  link='https://google.com'   
+  // prop binding
+  link='https://google.com'
+  // same with method worked...  
   createLink() {
     return 'https://google.com'
+  }
+  // directive ngIf
+  flag=true
+  
+  switchFlag() {
+    this.flag = !this.flag
   }
 }
