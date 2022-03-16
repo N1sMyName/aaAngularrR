@@ -1,10 +1,10 @@
   
 import { NgModule } from '@angular/core'
 import { Routes,RouterModule } from '@angular/router'
-import { NewOneComponent } from './new-one/new-one.component'
+import { AppComponent } from './app.component'
 
 const routes : Routes = [
-    {path: '',component: NewOneComponent}
+    {path: '',component: AppComponent}
 ]
 
 @NgModule({
