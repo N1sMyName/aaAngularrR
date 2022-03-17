@@ -9,7 +9,7 @@ import { MessageService } from '../message.service';
 })
 export class HeroComponentComponent  {
   // Provider
-  selectedHero?:Hero
+  // selectedHero?:Hero
   
   heroes:Hero[] = []
   
@@ -19,10 +19,10 @@ export class HeroComponentComponent  {
     this.getHeroes();
   }
 
-  onSelect(hero:Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`Selected hero - id:${hero.id} name:${hero.name} `)
-  }
+  // onSelect(hero:Hero): void {
+  //   this.selectedHero = hero;
+  //   this.messageService.add(`Selected hero - id:${hero.id} name:${hero.name} `)
+  // }
 
   getHeroes(): void {
     this.heroService.getHeroes()
