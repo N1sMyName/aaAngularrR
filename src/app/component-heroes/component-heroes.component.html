@@ -1,5 +1,7 @@
-<h1>{{hero.name | uppercase}} is my hero</h1>
+<h1>{{ hero.name | uppercase }} is my hero</h1>
 <div>
-    <label for="name">hero-name: </label>
-    <input  id="name" [(ngModel)]="hero.name" placeholder="name">
+  <label for="name">hero-name: </label>
+  <input id="name" [(ngModel)]="hero.name" placeholder="name" />
 </div>
+
+<app-hero-component></app-hero-component>
